@@ -2,8 +2,16 @@
 Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.com](https://learnopengl.com). 
 
 ## Windows building
-All relevant libraries are found in /libs and all DLLs found in /dlls (pre-)compiled for Windows. 
-The CMake script knows where to find the libraries so just run CMake script and generate project of choice.
+Install CMake 3.13 or newer and Visual Studio with the **Desktop development with C++** workload. All relevant libraries are found in `/lib` and all DLLs found in `/dlls` (pre-)compiled for 64-bit Windows.
+
+From PowerShell, configure and build all Debug examples with the commands below. Omitting `-G` lets CMake select the newest installed Visual Studio generator:
+
+```powershell
+cmake -S . -B build -A x64
+cmake --build build --config Debug --parallel
+```
+
+Executables and their required DLLs and shaders are written below `bin/<chapter>/Debug`. Run them from that directory, or launch them from the generated Visual Studio solution so the configured working directory is used.
 
 Keep in mind the supplied libraries were generated with a specific compiler version which may or may not work on your system (generating a large batch of link errors). In that case it's advised to build the libraries yourself from the source.
 
