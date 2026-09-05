@@ -47,13 +47,13 @@ int main()
     // -----------
     while (!glfwWindowShouldClose(window))
     {
-        // input
-        // -----
+        // 1. 处理上一轮 Poll 产生的/最新的输入 (Input Processing)
         processInput(window);
 
-        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-        // -------------------------------------------------------------------------------
+
+        // 4. 提交渲染结果并等待显示 (Display)
         glfwSwapBuffers(window);
+        // 5. 轮询并收集事件，为下一帧做准备 (Events)
         glfwPollEvents();
     }
 
