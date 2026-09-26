@@ -277,3 +277,6 @@ foreach(GUEST_ARTICLE ${GUEST_ARTICLES})
 endforeach(GUEST_ARTICLE)
 
 include_directories(${CMAKE_SOURCE_DIR}/includes)
+
+# Small, standalone demonstrations for learning and quick verification.
+add_subdirectory(src/test)
