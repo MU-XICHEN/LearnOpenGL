@@ -25,7 +25,8 @@ foreach(DEMO_DIR IN LISTS DEMO_ENTRIES)
         VS_DEBUGGER_WORKING_DIRECTORY "$<TARGET_FILE_DIR:${DEMO_TARGET}>"
     )
     if(MSVC)
-        target_compile_options(${DEMO_TARGET} PRIVATE /MP)
+        # Demo source files use UTF-8, including Chinese explanations.
+        target_compile_options(${DEMO_TARGET} PRIVATE /MP /utf-8)
         target_link_options(${DEMO_TARGET} PRIVATE /ignore:4099)
     endif()
 
