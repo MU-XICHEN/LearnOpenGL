@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Windows-MSVC-x64",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "mergeConfigurations": true,
+            "includePath": [
+                "${workspaceFolder}/includes",
+                "${workspaceFolder}/includes/**",
+                "${workspaceFolder}/build/configuration",
+                "${workspaceFolder}/src/**"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/includes",
+                    "${workspaceFolder}/build/configuration",
+                    "${workspaceFolder}/src"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "defines": [
+                "WIN32",
+                "_WINDOWS"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}

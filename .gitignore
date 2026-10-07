@@ -1,6 +1,4 @@
 # ignores following folders
-.vscode
-
 bin/
 build/
 out/
