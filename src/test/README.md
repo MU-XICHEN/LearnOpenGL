@@ -10,6 +10,7 @@
 | [视口与附件尺寸](viewport_attachment_size/README.md) | `test__viewport_attachment_size` | 对照 viewport 与颜色附件尺寸不同时的结果 |
 | [动态环境映射](dynamic_environment_mapping/README.md) | `test__dynamic_environment_mapping` | 用 FBO 更新 cubemap 六面，演示反射、折射和冻结捕获 |
 | [切线平均与 TBN 正交化](tbn_averaging/README.md) | `test__tbn_averaging` | 对照逐面切线、共享顶点平均、正交误差及 Gram–Schmidt 修正 |
+| [球体光照体积](deferred_light_volumes/README.md) | `test__deferred_light_volumes` | 基于 8.2，以背面球体、逐灯着色与加法混合支持 32/128/512 光源 |
 
 ## 目录约定
 
